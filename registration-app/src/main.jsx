@@ -11,6 +11,9 @@ import EmployeeForm from './Component/EmployeeForm';
 import EmployeeManagement from './Component/EmployeeManagement';
 import UpdatePage from './Pages/UpdatePage';
 import Update from './Component/Update';
+import ProfilePage from './Pages/ProfilePage.jsx';
+import RegisterAdminsPage from './Pages/RegisterAdminsPage.jsx';
+import AdminPage from './Pages/AdminPage.jsx';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +43,15 @@ const router = createBrowserRouter([
   },{
     path: '/UpdateProfile',
     element:<Update/>
+  },{
+    path: '/Profile',
+    element:<ProfilePage/>
+  },{
+    path: '/RegisterAdmins',
+    element: <RegisterAdminsPage/>
+  },{
+    path: '/Admin',
+    element: <AdminPage/>
   }
 ]);
 

@@ -29,9 +29,11 @@ const Navbar = () => {
         &#9776; {/* Hamburger icon */}
       </button>
       <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
-        <li><Link to="/Home">Home</Link></li>
+        <li><Link to="/Home">Employees</Link></li>
+        <li><Link to="/Admin">Admins</Link></li>
         <li><Link to="/Form">Add Employee</Link></li>
-        {/* <li><Link to="">Update Profile</Link></li> */}
+        <li><Link to="/RegisterAdmins">Add Admin</Link></li>
+        <li><Link to="/Profile">Profile</Link></li>
         <li>
           <a href="#" onClick={handleLogout}>
             {isLoading ? 'Logging Out...' : 'Log Out'}

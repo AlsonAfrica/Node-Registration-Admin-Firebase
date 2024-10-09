@@ -37,7 +37,7 @@ html{
   }
   input{
     width:300px;
-    height:25px;
+    height:40px;
     /* border:none; */
     outline:none;
     border:2px solid grey;
