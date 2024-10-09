@@ -138,6 +138,7 @@ const AdminForm = () => {
               <thead>
                 <tr>
                   <th>Name</th>
+                  <th>Surname</th>
                   <th>ID Number</th>
                   <th>Email</th>
                   <th>Age</th>
@@ -150,6 +151,7 @@ const AdminForm = () => {
                 {filteredEmployees.map((employee) => (
                   <tr key={employee.id}>
                     <td>{employee.userName}</td>
+                    <td>{employee.surname}</td>
                     <td>{employee.idNumber}</td>
                     <td>{employee.email}</td>
                     <td>{employee.age}</td>
@@ -178,23 +180,26 @@ const AdminForm = () => {
             <h2>Previous Employees</h2>
             <table>
               <thead>
-                <tr>
+              <tr>
                   <th>Name</th>
+                  <th>Surname</th>
                   <th>ID Number</th>
                   <th>Email</th>
-                  <th>Phone Number</th>
+                  <th>Age</th>
                   <th>Position</th>
                   <th>Picture</th>
+                  <th>Actions</th>
                 </tr>
               </thead>
               <tbody>
                 {previousEmployees.map((employee) => (
                   <tr key={employee.id}>
-                    <td>{employee.name}</td>
+                    <td>{employee.userName}</td>
+                    <td>{employee.surname}</td>
                     <td>{employee.idNumber}</td>
                     <td>{employee.email}</td>
-                    <td>{employee.phoneNumber}</td> {/* Ensure this matches the field name */}
-                    <td>{employee.position}</td>
+                    <td>{employee.age}</td>
+                    <td>{employee.role}</td>
                     <td>
                       <img src={employee.image} alt={employee.name} />
                     </td>
